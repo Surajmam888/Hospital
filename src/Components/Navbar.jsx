@@ -70,10 +70,12 @@ const Navbar = () => {
               flexGrow: 1,
               fontWeight: 'bold',
               cursor: 'pointer',
-              '@media (max-width:600px)': {
-                mr: 5,
-                fontSize: '1rem',
-              },
+              textAlign: { xs: 'center', sm: 'left' }, 
+              fontSize: { xs: '0.9rem', sm: '1rem', md: '1.2rem' }, 
+              mr: { xs: 2, sm: 5, md: 10 }, 
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
             }}
           >
             Hospital Appointment System
@@ -82,13 +84,17 @@ const Navbar = () => {
 
         {isMobile ? (
           <IconButton
-            edge="start"
-            color="inherit"
-            onClick={() => toggleDrawer(true)}
-            sx={{ display: { xs: 'block', md: 'none' }, ml: '-1px' }}
-          >
-            <MenuIcon />
-          </IconButton>
+          edge="end" 
+          color="inherit"
+          onClick={() => toggleDrawer(true)}
+          sx={{
+            display: { xs: 'block', md: 'none' }, 
+            position: 'absolute', 
+            right: '30px', 
+          }}
+        >
+          <MenuIcon />
+        </IconButton>
         ) : (
           <Box
             sx={{
