@@ -28,8 +28,9 @@ const HomePage = () => {
         component="h1"
         sx={{
           textAlign: "center",
-          marginBottom: { xs: "50px !important", lg:"250px !important" }, 
-          fontSize: { xs: "2rem", md: "3rem",lg:"3rem" }, 
+          marginBottom: { xs: "200px !important", lg: "100px !important" }, 
+          marginTop: { xs: "-380px !important", lg: "-150px !important" }, 
+          fontSize: { xs: "2rem", md: "3rem", lg: "3rem" },
           color: "#a12f2a",
         }}
       >

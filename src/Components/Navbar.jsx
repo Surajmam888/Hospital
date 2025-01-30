@@ -70,6 +70,10 @@ const Navbar = () => {
               flexGrow: 1,
               fontWeight: 'bold',
               cursor: 'pointer',
+              '@media (max-width:600px)': {
+                mr: 5,
+                fontSize: '1rem',
+              },
             }}
           >
             Hospital Appointment System
